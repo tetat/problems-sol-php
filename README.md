@@ -16,7 +16,7 @@ https://github.com/tetat/problems-sol-php.git
 php Problem-0X/Sol.php
 ```
 
-For specific problem, just chenge the value of `X`
+Where `1 <= X <= 5`
 
 ### Note for Problem 02
 
