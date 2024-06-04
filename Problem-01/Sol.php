@@ -20,7 +20,10 @@ function findMin(array $nums): int {
 
 function mainFunc(): void {
 
-    $nums = explode(' ', trim(readline()));
+    $nums = explode(
+        ' ',
+        trim(readline())
+    );
     
     $len = count($nums);
 

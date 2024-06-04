@@ -20,4 +20,4 @@ For specific problem, just chenge the value of `X`
 
 ### Note for Problem 02
 
-If you want to run this problem's solution from Problem-02 folder then you need to change the file path from `"./Problem-02/input.txt"` to `"/input.txt"`
+If you want to run this problem's solution from Problem-02 folder then you need to change the file path from `./Problem-02/input.txt` to `./input.txt`
