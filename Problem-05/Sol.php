@@ -1,12 +1,8 @@
 <?php
 
+// canBeStringToInt() is inside hooks.php file
+include('./hooks.php');
 
-function canBeStringToInt(string $str): bool {
-    for ($i = 0; $i < strlen($str); $i++) {
-        if ($str[$i] == '.') return false;
-    }
-    return true;
-}
 
 function sumOfDigits(int $num): int {
     $numegative = false;
@@ -30,9 +26,10 @@ function sumOfDigits(int $num): int {
 function mainFunc(): void {
     $num = trim(readline());
 
-    if (!is_numeric($num) || !canBeStringToInt($num)) $num = -1;
+    // if non numeric or floating type numbers given
+    if (!is_numeric($num) || !canBeStringToInt($num)) $num = null;
 
-    if ($num < 1) {
+    if ($num === null) {
         echo "Invalid number given!\n";
         return;
     }

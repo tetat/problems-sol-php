@@ -1,11 +1,7 @@
 <?php
 
-function canBeStringToInt(string $str): bool {
-    for ($i = 0; $i < strlen($str); $i++) {
-        if ($str[$i] == '.') return false;
-    }
-    return true;
-}
+// canBeStringToInt() is inside hooks.php file
+include('./hooks.php');
 
 function printPyramid(int $num): void {
     $row = $num;
@@ -22,6 +18,7 @@ function printPyramid(int $num): void {
 function mainFunc(): void {
     $num = trim(readline());
 
+    // if non numeric or floating type numbers given
     if (!is_numeric($num) || !canBeStringToInt($num)) $num = -1;
 
     if ($num < 1) {
